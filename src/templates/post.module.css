@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+.postContainer {
+  width: 80%;
+  padding: 100px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postBody {
+  padding: 50px 0px;
+}
+
+.postContent * {
+  font-family: "Ubuntu", sans-serif;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.postContent h1 {
+  margin-bottom: 20px;
+}
+
+.postTitle {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .postGrid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .postFeaturedImage {
+    grid-column: span 1 / span 1;
+  }
+
+  .postBody {
+    grid-column: span 5 / span 5;
+    padding: 0px 50px;
+  }
+}

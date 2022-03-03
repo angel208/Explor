@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu&display=swap");
+
+/*TODO: change button style for one that looks better*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+.btn {
+  border-radius: 4px;
+  background: #0467fb;
+  white-space: nowrap;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ff4040;
+}
+
+.btnPrimary {
+  background: #ff4040;
+}
+
+.btnPrimary:hover {
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  color: black;
+}
+
+.big {
+  padding: 16px 64px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .btn {
+    width: 100%;
+  }
+}
